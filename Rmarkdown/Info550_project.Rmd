@@ -14,10 +14,9 @@ library(reshape2)
 library(table1)
 ```
 
-```{r,}
-setwd("/Users/kkchen/Desktop/FALL2021/INFO550/project/IMDB/Input")
-movies <- read.csv("movies.csv", stringsAsFactors=FALSE)
-ratings <- read.csv("ratings.csv")
+```{r}
+movies <- read.csv("../Data/movies.csv", stringsAsFactors=FALSE) #You may need to download the csv file from Data directory
+ratings <- read.csv("../Data/ratings.csv")
 str(movies)
 ```
 
