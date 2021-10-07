@@ -15,8 +15,9 @@ library(table1)
 ```
 
 ```{r}
-movies <- read.csv("./Data/movies.csv", stringsAsFactors=FALSE) #You may need to download the csv file from Data directory
-ratings <- read.csv("./Data/ratings.csv")
+#You may need to download the csv file from Data directory
+movies <- read.csv("../stchen1128/info550_hw/Data/movies.csv", stringsAsFactors=FALSE) 
+ratings <- read.csv("../stchen1128/info550_hw/Data/ratings.csv")
 str(movies)
 ```
 
