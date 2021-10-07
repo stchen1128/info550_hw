@@ -5,12 +5,13 @@ Please download these files for running the analysis.
 
 To start the analysis you will need to install some R packages. The requaired packages ccan be installed using R commands. 
 ```
-library(readr)
-library(tidyverse)
-library(ggplot2)
-library(data.table)
-library(reshape2)
-library(table1)
+installed_pkgs <- row.names(installed.packages())
+pkgs <- c("readr", "tidyverse", "ggplot2", "data.table", "reshape2", "lubridate", "ggthemes", "scales" )
+for(p in pkgs){
+	if(!(p %in% install_pkgs)){
+		install.packages(p)
+	}
+}
 ```
 # Execute the analysis
 
